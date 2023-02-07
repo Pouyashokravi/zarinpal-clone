@@ -260,17 +260,19 @@ header{
     width: 1070px;
     margin: auto;
     display: flex;
-    align-items: flex-start;
+    align-items:flex-start;
     justify-content: space-between;
 }
 
 .online-payment img{
-    width: 450px;
-    height: 480px;
+    width: 550px;
+    height: 500px;
 }
-section-text{
-    margin: 30px 0;
-    width: 530px;
+.section-text{
+    margin: 40px 0;
+    width: 585px;
+    height: 483px;
+
 }
 .section-text h2{
     color: #747480;
@@ -286,7 +288,7 @@ section-text{
     font-size: 2rem;
     margin: 5px 0 10px;
 }
-.secton-text p {
+.section-text-p{
     color: #303030;
     font-family:YekanBakhMedium ;
     text-align: justify;
@@ -327,6 +329,15 @@ section-text{
     margin-right: 5px;
 
 }
+#zarincard-image{
+    width: 410px;
+    height: 370px;
+}
+#zarinpluas-image{
+    width: 450px;
+    height: 410px;
+}
+
 @keyframes fadeInDown {
     0%{
         opacity: 0;
