@@ -441,6 +441,40 @@ header{
     margin-top: 12px;
     cursor: pointer;
 }
+
+.support{
+    width: 1170px;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fbf6f1;
+    margin: 50px auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+.support-number{
+    font-size: 1.5rem;
+    font-family: YekanBakhHeavy;
+}
+#line{
+    margin: 0 15px;
+}
+#phone-number{
+    color: #21457f;
+}
+.support-request{
+    display: flex;
+    font-family: YekanBakhBold;
+    font-size:24px;
+}
+.support-request a{
+    text-decoration: none;
+}
+.support-request img{
+    width: 20px;
+    margin-right: 10px;
+}
 @keyframes fadeInDown {
     0%{
         opacity: 0;
@@ -502,6 +536,9 @@ header{
     .start-box{
         width: 940px;
     }
+    .support{
+        width: 940px;
+    }
 }
 
 
@@ -560,6 +597,14 @@ header{
         margin: 0 38px;
         width: calc(100% - 76px)
     }
+    .support{
+        /* margin: 40px 60px; */
+        width: calc(100% - 120px);
+    }
+    .support-request ,
+     .support-number{
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -605,6 +650,18 @@ header{
         margin: 0 8px;
         width: calc(100% - 16px)
     }
+    .support{
+        flex-direction: column;
+        align-items: flex-start;
+        background: none;
+    }
+    .support-request{
+        background-color: #fbf6f1;
+        padding: 5px 20px;
+        border-radius: 35px;
+        margin-top: 20px;
+        margin-right: -10px;
+    }
 }
 
 
@@ -646,6 +703,15 @@ header{
     .start-box p{
         font-size: 1rem;
     }
+    .support{
+        width: calc(100% - 60px);
+        padding: 0;
+        margin: 50px 30px;
+    }
+    .support-number, .support-request{
+        font-size:0.95rem;
+    }
+
 }
 
 
