@@ -7,6 +7,8 @@ body{
     font-family: 'iranyekanwebregular', Courier, monospace;
 }
 
+        /* header section  */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -147,8 +149,6 @@ header{
     background-color: rgba(232, 239, 254, 0.6);
 }
 
-
-
 #show-product-menu{
     position: relative;
 }
@@ -183,6 +183,9 @@ header{
 .product-menu a:hover{
     background-color: rgba(232, 239, 254, 0.6)
 }
+
+        /* banner section  */
+
 .banner{
     width: 1170px;
     padding: 154px 60px 80px;
@@ -255,6 +258,8 @@ header{
     position: relative;
     top: -60px;
 }
+
+          /* main cards section  */
 
 .online-payment{
     width: 1170px;
@@ -338,6 +343,8 @@ header{
     height: 410px;
 }
 
+         /* attributes section */
+
 .attributes{
     display: flex;
     justify-content:space-between;
@@ -403,6 +410,8 @@ header{
     border-left:  1px solid #e0e4e7;
 }
 
+             /* start box section */
+
 .start-box{
     /* background-color: #28467b; */
     margin: auto;
@@ -442,6 +451,8 @@ header{
     cursor: pointer;
 }
 
+            /* support section */
+
 .support{
     width: 1170px;
     height: 70px;
@@ -475,6 +486,69 @@ header{
     width: 20px;
     margin-right: 10px;
 }
+
+            /* footer section */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width:1170px ;
+    margin:auto ;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    width: calc(100% - 330px);   /*because that 330px is used for social medias*/
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+.footer-links p{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: YekanBakhHeavy;
+    color: #303030;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links li{
+    padding: 8px 0;
+}
+.footer-links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: iranyekanwebmedium;
+    color: #000;
+}
+.social-media{
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+.social-media p{
+    font-family:YekanBakhHeavy ;
+    font-size: 1.3rem;
+    color: #303030;
+}
+.social-media div{
+    display: flex;
+    margin-top: 20px;
+}
+.social-media a{
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px ;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+            /* key frames for header animations */
+
 @keyframes fadeInDown {
     0%{
         opacity: 0;
@@ -494,6 +568,8 @@ header{
         opacity: 1;
     }
 }
+
+            /* responsive */
 
 @media (max-width:1200px){
     header{
@@ -537,6 +613,9 @@ header{
         width: 940px;
     }
     .support{
+        width: 940px;
+    }
+    footer{
         width: 940px;
     }
 }
@@ -605,6 +684,16 @@ header{
      .support-number{
         font-size: 1.2rem;
     }
+    footer{
+        flex-direction: column;
+        width: calc(100% - 60px);   /* 30 px for each side*/
+    }
+    footer .footer-links{
+        width: 100%;
+    }
+    footer .social-media{
+        padding: 0 10px;
+    }
 }
 
 
@@ -662,6 +751,15 @@ header{
         margin-top: 20px;
         margin-right: -10px;
     }
+    footer{
+        width: calc(100% - 160px);
+    }
+    footer .footer-links{
+        grid-template-columns: 1fr 1fr;
+    }
+     footer .footer-links div{
+        margin-top: 25px;
+     }
 }
 
 
@@ -710,6 +808,13 @@ header{
     }
     .support-number, .support-request{
         font-size:0.95rem;
+    }
+    footer{
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
+    .footer-links p , .footer-links a{
+        font-size: 0.9rem;
     }
 
 }
